@@ -2,6 +2,23 @@
 <html>
 <head>
     <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+       // $(document).on('mouseenter', 'td', function () {
+       //     $(this).find("button").show();
+       // }).on('mouseleave', 'td', function () {
+       //     $(this).find("button").hide();
+       // });
+
+       // $(document).on('mouseenter', 'li', function () {
+       //     $(this).find("button").show();
+       // }).on('mouseleave', 'li', function () {
+       //     $(this).find("button").hide();
+       // });
+    });
+
+    </script>
 </head>
 <style>
   body {
@@ -19,16 +36,18 @@
   button{
     width: 20px;
     height: 20px;
-    border-color: #adaaaa;
+    border-: 2px solid black;
+    border-radius: 50%;
     position: relative;
   }
+
 
   #row1 button{
         position: relative;
   }
 
   table, th, td {
-     border: 1px solid black;
+     /* border: 1px solid black; */
      width: 550px;
      height: 50px;
   }
@@ -38,7 +57,6 @@
     text-align: center;
   }
 
-
 </style>
 
 <body>
@@ -47,16 +65,16 @@
 
     <table>
          <tr id="row1">
-            <th></th>
-            <th> <button style="top:12px" id="b1"></button> <button style="top:0px" id="b2"></button> <button style="bottom:8px" id="b3"></button> <button style="bottom:10px" id="b4"></th>
-            <th> <button style="bottom:10px" id="b5"></button> <button style="bottom:8px" id="b6"></button> <button style="top:0px" id="b7"></button> <button style="top:12px" id="b8"></button></th>
-            <th></th>
+            <td></td>
+            <td><button style="top:12px" id="b1"></button> <button style="top:0px" id="b2"></button> <button style="bottom:8px" id="b3"></button> <button style="bottom:10px" id="b4"></button></td>
+            <td><button style="bottom:10px" id="b5"></button> <button style="bottom:8px" id="b6"></button> <button style="top:0px" id="b7"></button> <button style="top:12px" id="b8"></button></td>
+            <td></td>
          </tr>
 
          <tr class="larger">
-            <td>
+            <td class="vis">
               <ul>
-                <li><button style="left:30px" id="b9"></button></li>
+                <li><button style="left:30px;" id="b9"></button></li>
                 <li><button style="left:10px" id="b10"></button></li>
                 <li><button style="right:9px"id="b11"></button></li>
                 <li><button style="right:17px"id="b12"></button></li>
@@ -68,7 +86,7 @@
               </ul>
             </td>
             <td colspan="2">
-              <img width="90%" height="90%" src="sketch1.jpg"/>
+              <img width="80%" height="80%" src="sketch1.jpg"/>
             </td>
             <td>
               <ul>

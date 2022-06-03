@@ -9,6 +9,15 @@
 //       }</ul>`;
 // }
 
-
+// ('.btn').hover(
+//   function () {
+//     $(this).show();
+//   },
+//   function () {
+//     $(this).hide();
+//   }
+// );
+//
+// $('.btn').hide();
 
 document.getElementById("btnPopulate").addEventListener("click", showLayerNames);
