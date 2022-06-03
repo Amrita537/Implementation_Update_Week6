@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="index.js"></script>
+</head>
+<style>
+  body {
+    color: white;
+    padding: 0 16px;
+  }
+
+  #layers {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 16px;
+    width: 600px;
+  }
+
+  button{
+    width: 20px;
+    height: 20px;
+    border-color: #adaaaa;
+    position: relative;
+  }
+
+  #row1 button{
+        position: relative;
+  }
+
+  table, th, td {
+     border: 1px solid black;
+     width: 550px;
+     height: 50px;
+  }
+
+  .larger{
+    height: 300px;
+    text-align: center;
+  }
+
+
+</style>
+
+<body>
+  <sp-heading>Layers</sp-heading>
+  <sp-body id="layers">
+
+    <table>
+         <tr id="row1">
+            <th></th>
+            <th> <button style="top:12px" id="b1"></button> <button style="top:0px" id="b2"></button> <button style="bottom:8px" id="b3"></button> <button style="bottom:10px" id="b4"></th>
+            <th> <button style="bottom:10px" id="b5"></button> <button style="bottom:8px" id="b6"></button> <button style="top:0px" id="b7"></button> <button style="top:12px" id="b8"></button></th>
+            <th></th>
+         </tr>
+
+         <tr class="larger">
+            <td>
+              <ul>
+                <li><button style="left:30px" id="b9"></button></li>
+                <li><button style="left:10px" id="b10"></button></li>
+                <li><button style="right:9px"id="b11"></button></li>
+                <li><button style="right:17px"id="b12"></button></li>
+                <li><button style="right:17px" id="b13"></button></li>
+                <li><button style="right:17px" id="b14"></button></li>
+                <li><button style="right:9px"id="b15"></button></li>
+                <li><button style="left:10px"id="b16"></button></li>
+                <li><button style="left:30px" id="b17"></button></li>
+              </ul>
+            </td>
+            <td colspan="2">
+              <img width="90%" height="90%" src="sketch1.jpg"/>
+            </td>
+            <td>
+              <ul>
+                <li><button style="right:30px" id="b18"></button></li>
+                <li><button style="right:10px" id="b20"></button></li>
+                <li><button style="left:9px"id="b21"></button></li>
+                <li><button style="left:17px"id="b22"></button></li>
+                <li><button style="left:17px" id="b22"></button></li>
+                <li><button style="left:17px" id="b24"></button></li>
+                <li><button style="left:9px"id="b25"></button></li>
+                <li><button style="right:10px"id="b26"></button></li>
+                <li><button style="right:30px" id="b27"></button></li>
+              </ul>
+            </td>
+         </tr>
+
+         <tr>
+            <td></td>
+            <td><button style="bottom:10px" id="b28"></button> <button style="bottom:0px" id="b29"></button> <button style="top:8px" id="b30"></button> <button style="top:12px" id="b31"></td>
+            <td><button style="top:12px" id="b32"></button> <button style="top:8px" id="b33"></button> <button style="bottom:0px" id="b34"></button> <button style="bottom:10px" id="b35"></td>
+            <td></td>
+         </tr>
+      </table>
+
+  </sp-body>
+  <!-- <footer>
+    <sp-button id="btnPopulate">Populate Layers</sp-button>
+  </footer> -->
+</body>
+</html>
